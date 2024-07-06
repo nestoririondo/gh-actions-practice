@@ -1,0 +1,12 @@
+name: First Workflow
+on: workflow_dispatch #this runs the workflow manually
+
+jobs:
+  first-job: #the name of the job. indentation is crucial
+    runs-on: ubuntu-latest #the machine it runs on
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done, bye!"
+  
